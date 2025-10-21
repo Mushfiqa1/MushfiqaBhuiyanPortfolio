@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RideCompare | Mushfiqa Bhuiyan</title>
+  <link rel="stylesheet" href="style.css">
+<style>
+
+  body {
+    background: black;
+    color: white;
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    overflow-x: hidden;
+  }
+  
+
+  .project-header {
+    padding: 3rem 1rem 1rem;
+  }
+
+  .project-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .project-header p {
+    color: #ccc;
+    font-size: 1.1rem;
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.6;
+  }
+
+  /* --- Responsive Image Row --- */
+  .gallery {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2rem;
+    flex-wrap: wrap; /* keeps them side-by-side on desktop and stacked on mobile */
+    padding: 3rem 2rem 5rem;
+  }
+
+  .gallery img {
+    width: 300px; /* you can adjust this for larger or smaller images */
+    max-width: 100%;
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .gallery img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(255, 255, 255, 0.25);
+  }
+
+  .back-btn {
+    display: inline-block;
+    margin-bottom: 3rem;
+    padding: 0.7rem 1.5rem;
+    background: white;
+    color: black;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+  }
+
+  .back-btn:hover {
+    background: #f0c040;
+  }
+
+  /* --- Make it look clean on phones --- */
+  @media (max-width: 768px) {
+    .gallery {
+      flex-direction: column;
+      align-items: center;
+      gap: 1.5rem;
+    }
+
+    .gallery img {
+      width: 85%;
+    }
+  }
+</style>
+
+</head>
+<body>
+
+  <div class="project-header">
+    <h1>RideCompare</h1>
+    <p>Find the best ride at the best price — a mobile app for comparing real-time fares across rideshare services.</p>
+  </div>
+
+  <div class="gallery">
+    <img src="images/ridecompare1.png" alt="RideCompare home screen">
+    <img src="images/ridecompare2.png" alt="Ride comparison results">
+    <img src="images/ridecompare3.png" alt="Ride selected confirmation">
+  </div>
+
+  <a href="index.html#projects" class="back-btn">← Back to Projects</a>
+  <script src="js/background-loader.js"></script>
+
+</body>
+</html>

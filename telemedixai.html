@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TeleMedixAI | Mushfiqa Bhuiyan</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      background: black;
+      color: white;
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      overflow-x: hidden;
+    }
+
+    .project-header {
+      padding: 3rem 1rem 1rem;
+    }
+
+    .project-header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .project-header p {
+      color: #ccc;
+      font-size: 1.1rem;
+      max-width: 750px;
+      margin: 0 auto;
+      line-height: 1.6;
+    }
+
+    /* --- Image Row (equal size) --- */
+    .gallery {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 2rem;
+      flex-wrap: wrap;
+      padding: 3rem 2rem 5rem;
+    }
+
+    .gallery img {
+      width: 280px;              /* uniform width */
+      height: 600px;             /* uniform height */
+      object-fit: cover;         /* keeps proportions and crops evenly */
+      border-radius: 20px;
+      box-shadow: 0 4px 15px rgba(255, 255, 255, 0.15);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 20px rgba(255, 255, 255, 0.25);
+    }
+
+    .back-btn {
+      display: inline-block;
+      margin-bottom: 3rem;
+      padding: 0.7rem 1.5rem;
+      background: white;
+      color: black;
+      border-radius: 25px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: all 0.3s ease;
+    }
+
+    .back-btn:hover {
+      background: #f0c040;
+    }
+
+.gallery img {
+  width: 280px;
+  height: 600px;
+  object-fit: cover;
+}
+
+@media (max-width: 1200px) {
+  .gallery img {
+    height: auto;
+    object-fit: contain;
+  }
+}
+    /* --- Make it look clean on phones --- */
+    @media (max-width: 768px) {
+      .gallery {
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+      }
+
+.gallery img {
+  width: 280px;
+  height: auto;        /* removes forced crop */
+  object-fit: contain; /* shows whole image */
+}
+
+    }
+  </style>
+</head>
+<body>
+  <div class="project-header">
+    <h1>TeleMedixAI</h1>
+    <p>
+      A React Native healthcare app that connects patients with AI-powered medical assistants 
+      and real doctors. Features include appointment booking, chat-based symptom checks, 
+      and real-time doctor availability.
+    </p>
+  </div>
+
+  <div class="gallery">
+    <img src="images/medix1.png" alt="TeleMedixAI home screen">
+    <img src="images/medix2.png" alt="TeleMedixAI appointment booking screen">
+    <img src="images/medix3.png" alt="TeleMedixAI chat interface">
+  </div>
+
+  <a href="index.html#projects" class="back-btn">← Back to Projects</a>
+  <script src="js/background-loader.js"></script>
+
+</body>
+</html>
