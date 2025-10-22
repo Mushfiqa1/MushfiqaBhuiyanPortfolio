@@ -308,6 +308,28 @@ section {
   position: relative;
   z-index: 1;
 }
+/* --- Mobile horizontal scroll for project cards --- */
+@media (max-width: 768px) {
+  .project-list {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 1rem;
+    padding: 1rem;
+    -webkit-overflow-scrolling: touch; /* smooth scroll on iOS */
+  }
+
+  .project-item {
+    flex: 0 0 80%;
+    scroll-snap-align: start;
+    min-width: 250px;
+  }
+
+  .project-item:last-child {
+    margin-right: 1rem;
+  }
+}
+
 
 
 
